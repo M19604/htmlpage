@@ -1,0 +1,31 @@
+<!-- WRITTEN BY LUKE SKUTT, 11/25/24 -->
+<title>HTML Page Display</title>
+<style>
+    body {
+        margin: 0;
+        background-color: #262a33;
+        font-family: sans-serif;
+        user-select: none;
+        overflow: hidden;
+    }
+
+    #input {
+        height: 100%;
+        width: 100%;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        color: #c7d2cd;
+        padding: 1vw;
+        box-sizing: border-box;
+    }
+</style>
+<textarea id="input" placeholder="Paste your code here and press CTRL+Enter."></textarea>
+<script>
+    document.getElementById("input").addEventListener("keyup", e => {
+        if (e.ctrlKey && e.key === "Enter") {
+            document.body.innerHTML = input.value;
+        }
+    })
+</script>
+<!-- WRITTEN BY LUKE SKUTT, 11/25/24 -->

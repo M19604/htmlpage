@@ -24,6 +24,9 @@
 <script>
     document.getElementById("input").addEventListener("keyup", e => {
         if (e.ctrlKey && e.key === "Enter") {
+            document.body.style.color = "#000";
+            document.body.style.backgroundColor = "#fff";
+            document.body.style.margin = "1vw";
             document.body.innerHTML = input.value;
         }
     })
